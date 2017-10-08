@@ -1,0 +1,40 @@
+.pagination {
+  width: 59px;
+  .outline;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__toggle {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #bec2c7;
+}
+
+.pagination-reviews {
+  display: none;
+}
+
+.pagination__toggle--active {
+  background-color: rgba(255, 255, 255, 0.0);
+  border: 3px solid #283645;
+}
+
+@media (max-width: 680px) {
+
+  .pagination-reviews {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5px;
+  }
+
+}
