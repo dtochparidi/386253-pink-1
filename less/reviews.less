@@ -1,0 +1,167 @@
+.reviews {
+  display: flex;
+}
+
+.reviews__wrapper {
+  .container;
+  padding-bottom: 44px;
+  position: relative;
+  min-height: 415px;
+}
+
+.reviews__title {
+  position: absolute;
+  visibility: hidden;
+  margin: 0px;
+}
+
+.reviews__img {
+  display: block;
+  width: 80px;
+  height: 40px;
+  .outline;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.reviews__article {
+  width: 76%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  outline: 2px solid green;
+  padding: 0px;
+  margin-top: 75px;
+}
+
+.reviews__article p{
+  .outline;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+  margin: 0px;
+  margin-bottom: 34px;
+}
+
+.reviews__article-quote {
+  display: none;
+}
+
+.reviews__article-author {
+  outline: 1px solid blue;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.reviews__article-author h3 {
+  text-align: center;
+  margin: 0px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.reviews__article-author span {
+  display: block;
+  text-align: center;
+  .outline;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+.reviews__article p {
+  text-align: center;
+}
+
+.reviews__toggle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 214px;
+}
+
+.reviews__img {
+  margin-top: 72px;
+}
+
+.reviews__toggle--left {
+  left: 0px;
+  background-color: yellow;
+}
+
+.reviews__toggle--rigth {
+  right: 0px;
+  background-color: blue;
+}
+
+.reviews__article--2, .reviews__article--3  {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media (max-width: 680px) {
+
+  .reviews__wrapper {
+    min-height: 300px;
+    width: auto;
+  }
+
+  .reviews__article {
+    width: 97%;
+    margin-top: 95px;
+  }
+
+  .reviews__article-author {
+    bottom: 200px;
+  }
+
+  .reviews__article-author p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .reviews__article-quote {
+   display: inline;
+  }
+
+  .reviews__article-author h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reviews__article-author span {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+
+  .reviews__toggle {
+    display: none;
+  }
+
+  .reviews__img {
+    display: none;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .reviews__article {
+    .outline;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__article  .reviews__article-quote {
+    display: inline;
+  }
+
+}
