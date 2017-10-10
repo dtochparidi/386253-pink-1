@@ -19,6 +19,17 @@
   display: none;
 }
 
+.pagination-price {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 47px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  outline: 0px;
+}
+
 .pagination__toggle--active {
   background-color: rgba(255, 255, 255, 0.0);
   border: 3px solid #283645;
@@ -29,12 +40,24 @@
   .pagination-reviews {
     display: flex;
     position: absolute;
-    bottom: 16px;
+    bottom: 72px;
     left: 0px;
     right: 0px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 5px;
+  }
+
+}
+
+@media (max-width: 337px) {
+
+  .pagination-reviews {
+    bottom: 74px;
+  }
+
+  .pagination-price {
+    display: flex;
   }
 
 }

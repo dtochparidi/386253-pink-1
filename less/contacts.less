@@ -41,7 +41,43 @@
 
 .contacts__map {
   display: block;
-  outline: 2px solid blue;
-  height: 502px;
+  height: 506px;
   width: 100%;
+}
+
+@media (max-width: 680px) {
+
+  .contacts__articles-wrapper {
+    margin-top: 45px;
+    margin-bottom: 27px;
+  }
+
+  .contacts__text {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 47px;
+  }
+
+  .contacts__map {
+    height: 378px;
+  }
+
+}
+
+@media (max-width: 337px) {
+
+  .contacts__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 42px;
+  }
+
+  .contacts__articles-wrapper {
+    margin-top: 36px;
+  }
+
+  .contacts__map {
+    height: 200px;
+  }
+
 }
