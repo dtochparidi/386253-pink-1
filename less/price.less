@@ -1,6 +1,7 @@
 .price {
   display: flex;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .price__wrapper {
@@ -18,8 +19,8 @@
   margin-right: auto;
   display: table;
   padding: 0px;
-  margin-bottom: 97px;
-  margin-top: 102px;
+  margin-bottom: 95px;
+  margin-top: 48px;
   border-collapse: collapse;
   line-height: 30px;
   table-layout: fixed;
@@ -48,6 +49,13 @@
 
 .price__td--header {
   position: relative;
+  vertical-align: top;
+}
+
+.price__td--header b {
+  margin-top: 16px;
+  margin-bottom: 1px;
+  display: inline-block;
 }
 
 .price__td--legend {
@@ -58,7 +66,7 @@
 
 .price__tr--header {
   background-color: #283645;
-  height: 99px;
+  height: 98px;
 }
 
 .price__tr--header .price__td:nth-child(1) {
@@ -71,6 +79,15 @@
   font-weight: 300;
   color: white;
   display: block;
+}
+
+.price__td-text {
+  font-size:14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-left: 21px;
+  text-transform: uppercase;
+  display: none;
 }
 
 .price__table .price__tr:nth-child(1) .price__td {
@@ -94,11 +111,15 @@
 }
 
 .price__table .price__tr:nth-child(1) .price__td:nth-child(3) {
-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .price__table .price__tr:nth-child(2) .price__td:nth-child(n+2) {
   border-top: 0px;
+}
+
+.price__table .price__tr:nth-child(2) .price__td:first-child {
+  box-shadow: 0 -2px 0 #e5e5e5;
 }
 
 .price__table .price__tr:nth-child(4) .price__td:first-child {
@@ -122,7 +143,8 @@ border-radius: 0px;
 @media (max-width: 680px) {
 
   .price__table {
-    margin-top: 93px;
+    margin-top: 36px;
+    width: 99%;
   }
 
   .price__wrapper {
@@ -134,19 +156,16 @@ border-radius: 0px;
     height: 45px;
   }
 
-  .price__tr--header {
-    height: 79px;
-  }
-
-  .price__td--header {
-    height: 20px;
-  }
-
   .price__td--header b {
+    margin-top: 19px;
+    margin-bottom: 0px;
     display: inline-block;
     font-size: 16px;
-    line-height: 30px;
-    margin-top: 5px;
+    line-height: 16px;
+  }
+
+  .price__tr--header {
+    height: 79px;
   }
 
   .price__td--header span {
@@ -169,24 +188,59 @@ border-radius: 0px;
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 337px) {
 
   .price__wrapper {
     padding-left: 0px;
     padding-right: 0px;
+    overflow: hidden;
   }
 
   .price__table {
+    margin-top: 59px;
+    margin-left: -532px;
+    margin-bottom: 98px;
     width: 100%;
-  }
-
-  .price__tr .price__td:nth-child(1), .price__tr .price__td:nth-child(2), .price__tr .price__td:nth-child(4)  {
-    display: none;
   }
 
   .price__td {
-    width: 100%;
+    width: 276px;
     position: relative;
+    height: 59px;
+  }
+
+  .price__td--header {
+    height: 20px;
+
+  }
+
+  .price__table .price__td--header b {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 17px;
+  }
+
+  .price__tr--header {
+    height: 98px;
+  }
+
+  .price__td-text {
+    display: inline;
+  }
+
+  .price__table .price__tr:nth-child(n+2) .price__td:nth-child(3) {
+    text-align: left;
+  }
+
+  .price__td b {
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .price__td .price__table-legend {
+    font-size: 24px;
   }
 
   .price__table .price__tr:nth-child(n+2) .price__td:nth-child(3)::after {
@@ -197,7 +251,7 @@ border-radius: 0px;
     .outline;
     background-color: black;
     position: absolute;
-    right: 20px;
+    right: 27px;
     bottom: 0px;
     top: 0px;
     margin-top: auto;

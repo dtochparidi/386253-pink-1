@@ -1,14 +1,44 @@
 .like {
-  .outline;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  font-size: 12px;
+  line-height: 25px;
+  color: #d22856;
+  text-transform: uppercase;
+  font-weight: 400;
+  top: 108px;
+  left: 28px;
 }
 
-@media (max-width: 400px) {
+.like--panorama {
+  top: 25px;
+  left: auto;
+  right: 62px;
+}
+
+@media (max-width: 680px) {
+
+  .like--panorama {
+    top: 24px;
+    left: auto;
+    right: 59px;
+  }
+
+}
+
+@media (max-width: 337px) {
 
   .like {
-    position: static;
+    top: auto;
+    left: 49px;
+    right: auto;
+    bottom: 20px;
+  }
+
+  .like--panorama {
+    top: auto;
+    left: 50px;
+    right: auto;
+    bottom: 20px;
   }
 
 }

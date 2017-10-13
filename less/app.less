@@ -1,15 +1,22 @@
 .app {
-  .container;
   min-height: 743px;
   .clearfix;
   position: relative;
   outline: 0px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center;
+  padding-top: 110px;
+  display: flex;
+}
+
+.app__wrapper {
+  .container;
+  position: relative;
 }
 
 .app__container {
   width: 300px;
-  margin-top: 109px;
-  outline: 2px solid white;
+  margin-top: 108px;
 }
 
 .app__title {
@@ -57,12 +64,20 @@
   width: auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 91px;
-  margin-top: 252px;
+  padding-bottom: 92px;
+  padding-top: 107px;
+  min-height: auto;
+  margin-top: 259px;
+}
+
+.app__wrapper {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .app__container {
-  margin-top: 348px;
+  margin-top: 95px;
+  margin-left: 2px;
 }
 
 .app__promo-text {
@@ -85,16 +100,32 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 337px) {
 
 .app {
   width: auto;
+  padding-bottom: 16px;
+  margin-left: -2px;
+  padding-top: 395px;
 }
 
 .app__container {
-  .outline;
   width: auto;
-  margin-top: 40px;
+  margin-bottom: -270px;
+}
+
+.app__promo-text {
+  display: none;
+}
+
+.app__platforms {
+  margin-top: 32px;
+}
+
+.app__dscr {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 19px;
 }
 
 }

@@ -2,7 +2,6 @@
   margin-left: auto;
   width: 66%;
   box-sizing: border-box;
-  outline: 3px solid white;
 }
 
 .main-nav__list {
@@ -33,6 +32,15 @@
   color: rgba(255, 255, 255, 0.3)
 }
 
+.main-nav__toggler {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  display: none;
+}
 
 @media (max-width: 680px) {
 
@@ -53,7 +61,7 @@
 .main-nav__item a{
   display: block;
   width: 100%;
-  min-height: 63px;
+  min-height: 64px;
   text-align: center;
   text-transform: uppercase;
   background-color: #283645;
@@ -65,5 +73,24 @@
   line-height: 32px;
   font-weight: 700;
 }
+
+.main-nav__toggler {
+  display: block;
+}
+
+}
+
+@media (max-width: 337px) {
+
+  .main-nav__wrapper {
+    margin-top: 23px;
+  }
+
+  .main-nav__toggler {
+    width: 24px;
+    height: 23px;
+    right: 19px;
+    top: 21px;
+  }
 
 }
