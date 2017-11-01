@@ -16,9 +16,8 @@
   display: block;
   width: 82%;
   text-align: center;
-  .outline;
   margin: 0px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   margin-top: 93px;
   margin-left: auto;
   margin-right: auto;
@@ -42,77 +41,294 @@
   text-transform: uppercase;
 }
 
-.form__legend {
-  font-size: 14px;
-  line-height: 30px;
-  color: #d22856;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 .form__personal {
-  .outline;
-  width: 45%;
-  margin-right: 10px;
+  width: 46.4%;
   order: 1;
+  min-height: 250px;
+  margin-top: 44px;
 }
 
-.form__achievements {
-  .outline;
+.form__personal-container label {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.form__personal-container label:last-child {
+  margin-bottom: 0px;
+}
+
+.form__personal-container input {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.form__achievements-wrapper {
   order: 4;
   flex: 0 100%;
+  margin-top: 30px;
 }
 
 .form__achievements-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  margin-top: 38px;
 }
 
 .form__achievements-container label {
-  width: 250px;
+  display: flex;
   margin-right: 15px;
-  .outline;
+  text-transform: none;
+  align-items: center;
+}
+
+.form__achievements-container label:first-child,
+.form__achievements-container label:nth-child(3),
+.form__achievements-container label:nth-child(5) {
+  margin-bottom: 43px;
+}
+
+.form__achievements-container label:first-child,
+.form__achievements-container label:nth-child(2) {
+  margin-right: 19px;
+}
+
+.form__achievements-container label:nth-child(5),
+.form__achievements-container label:last-child {
+  margin-right: 0px;
+}
+
+.form__achievements-container label:nth-child(1) {
+ order: 1;
+ width: 260px;
+ /*Сделал селфи с акулой*/
+}
+
+.form__achievements-container label:nth-child(2) {
+ order: 4;
+ width: 260px;
+ /*Обгорел на пляже*/
+}
+
+.form__achievements-container label:nth-child(3) {
+ order: 2;
+ width: 245px;
+ /*Видел Чака Норриса*/
+}
+
+.form__achievements-container label:nth-child(4) {
+ order: 5;
+ width: 245px;
+ /*Накупил сувениров*/
+}
+
+.form__achievements-container label:nth-child(5) {
+ order: 3;
+ width: 210px;
+ /*Удержал башню*/
+}
+
+.form__achievements-container label:nth-child(6) {
+ order: 6;
+ width: 210px;
+  /*Разгромил отель*/
+}
+
+.form__checkbox {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 0px;
+  margin-right: 21px;
+  background-color: white;
+}
+
+.form__achievements input[type=checkbox] {
+  display: none;
+}
+
+.form__achievements input[type=checkbox]:checked + .form__checkbox::before {
+content: "";
+display: block;
+width: 22px;
+height: 16px;
+background-color: blue;
+margin: auto;
+margin-top: 9px;
 }
 
 .form__contacts {
-  .outline;
   flex: 0 100%;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 49px;
   order: 3;
 }
 
 .form__contacts-container {
   display: flex;
+  width: 87.7%;
+  margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+}
+
+.form__contacts-container input{
+  width: 100%;
+  padding-right: 60px;
+  position: relative;
+}
+
+.form__contacts-container input::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #e5e5e5;
 }
 
 .form__contacts label {
-  .outline;
-}
-
-.form__app {
-  .outline;
-  order: 2;
-  width: 45%;
-}
-
-.form__textarea {
-  .outline;
-  margin-top: 20px;
-  order: 5;
-  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
+.form__contacts-container label:first-child {
+  margin-right: 70px;
+}
+
+.form__label-text {
+  order: 2;
+  margin-left: 20px;
+  margin-top: 9px;
+}
+
+.form__app-wrapper {
+  order: 2;
+  width: 45.9%;
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+.form__app-container {
+  margin-top: 40px;
+  margin-left: 75px;
+}
+
+.form__app label {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+}
+
+.form__app input[type=radio] {
+  display: none;
+}
+
+.form__app-container label, .form__achievements label {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__radio {
+  display: block;
+  width: 39px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor:pointer;
+  margin-right: 20px;
+}
+
+.form__app input[type=radio]:checked + .form__radio::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.form__textarea {
+  margin-top: 51px;
+  order: 5;
+  margin-bottom: 15px;
+  width: 100%;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-top: 28px;
+  padding-bottom: 33px;
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  min-height: 128px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-left: 19px;
+  padding-top: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
 .form__submit {
-  .outline;
   flex: 0 100%;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   order: 6;
 }
 
-@media (max-width: 660px) {
+.form__submit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__submit button {
+  width: 300px;
+  height: 63px;
+  background-color: #2aab6d;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  border: 0px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.form__submit-text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+
+.form__submit-text span:first-child {
+  color: #d22856;
+}
+
+@media (max-width: 680px) {
 
   .form__wrapper  {
     padding-left: 20px;
@@ -122,36 +338,284 @@
   .form__personal {
     flex: 0 100%;
     margin-right: 0px;
+    margin-top: 32px;
+    margin-left: 1px;
   }
 
-  .form__app {
+  .form__personal-container label {
+    margin-bottom: 52px;
+  }
+
+  .form__app-wrapper {
     flex: 0 100%;
-    margin-top: 20px;
+    margin-top: 51px;
+    padding-bottom: 19px;
+  }
+
+  .form__app-container {
+    margin-top: 37px;
+    margin-left: 60px;
+  }
+
+  .form__app-container .form__label {
+    margin-bottom: 36px;
+  }
+
+  .form__contacts {
+    margin-top: 51px;
+  }
+
+  .form__contacts-container {
+    flex-wrap: wrap;
+    margin-top: 31px;
+    margin-right: 59px;
+    margin-left: 58px;
+    width: auto;
+    margin-bottom: 26px;
+  }
+
+  .form__contacts-container label:first-child {
+    margin-right: 0px;
+    margin-bottom: 31px;
+  }
+
+  .form__achievements-wrapper {
+    margin-top: 31px;
+  }
+
+  .form__achievements-container {
+    margin-left: 59px;
+    margin-bottom: 48px;
   }
 
   .form__achievements-container label {
     flex: 0 100%;
+    margin-bottom: 43px;
+  }
+
+  .form__achievements-container label:last-child {
+    margin-bottom: 0px;
+  }
+
+  .form__achievements-container label:nth-child(1) {
+   order: 1;
+   width: 260px;
+   /*Сделал селфи с акулой*/
+  }
+
+  .form__achievements-container label:nth-child(2) {
+   order: 2;
+   width: 260px;
+   /*Обгорел на пляже*/
+  }
+
+  .form__achievements-container label:nth-child(3) {
+   order: 3;
+   width: 245px;
+   /*Видел Чака Норриса*/
+  }
+
+  .form__achievements-container label:nth-child(4) {
+   order: 4;
+   width: 245px;
+   /*Накупил сувениров*/
+  }
+
+  .form__achievements-container label:nth-child(5) {
+   order: 5;
+   width: 210px;
+   /*Удержал башню*/
+  }
+
+  .form__achievements-container label:nth-child(6) {
+   order: 6;
+   width: 210px;
+    /*Разгромил отель*/
+  }
+
+  .form__textarea {
+    padding-top: 31px;
+    padding-bottom: 41px;
+  }
+
+  textarea {
+    min-height: 193px;
+  }
+
+  .form__submit {
+    margin-top: 52px;
+  }
+
+  .form__submit-text span:last-child {
+    display: none;
   }
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 337px) {
+
+  .form__wrapper {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .form fieldset {
+    border: 0px;
+  }
+
+  .form__wrapper-text {
+    width: auto;
+    margin-right: 20px;
+    margin-left:20px;
+    margin-top: 46px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .form__wrapper-text span {
+    display: none;
+  }
+
+  .form__label-text {
+    margin-left: 0px;
+  }
 
   .form__personal {
     order: 1;
+    margin-top: 24px;
+  }
+
+  .form__personal-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form__personal-container span {
+    margin-left: 21px;
+  }
+
+  .form__personal-container label {
+    margin-bottom: 17px;
+    flex-wrap: wrap;
+  }
+
+  .form__personal-container input {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .form__achievements-wrapper {
+    order: 2;
+    margin-top: 42px;
+    background-color: #f2f2f2;
   }
 
   .form__achievements {
-    order: 2;
-    margin-top: 20px;
+    margin-top: 38px;
+  }
+
+  .form .form__achievements-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 43px;
+  }
+
+  .form .form__achievements-container label {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .form__checkbox {
+    margin-right: 30px;
   }
 
   .form__contacts  {
     order: 3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .form__contacts-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 23px;
+  }
+
+  .form__contacts-container span {
+    margin-left: 22px;
+    margin-bottom: 5px;
+  }
+
+  .form__contacts legend {
+    display: none;
+  }
+
+  .form__contacts-container input {
+    order: 2;
+  }
+
+  .form__contacts-container label:first-child {
+    margin-bottom: 8px;
+  }
+
+  .form__app-wrapper {
+    background-color: #f2f2f2;
+    order: 4;
+    margin-top: 16px;
   }
 
   .form__app {
-    order: 4;
+    margin-top: 38px;
+    margin-bottom: 24px;
+  }
+
+  .form__app-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 34px;
+  }
+
+  .form__app-container label:last-child {
+    margin-bottom: 0px;
+  }
+
+  .form__radio {
+    margin-right: 30px;
+  }
+
+  .form__textarea {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    margin-top: 38px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  textarea {
+    min-height: 201px;
+  }
+
+  .form__submit {
+    margin-top: 38px;
+  }
+
+  .form__submit-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .form__submit button {
+    width:100%;
+  }
+
+  .form__submit span {
+    margin-top: 35px;
   }
 
 }

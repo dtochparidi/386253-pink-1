@@ -10,7 +10,6 @@ fieldset {
   margin: 0px;
   padding: 0px;
   border: 2px solid #e5e5e5;
-
 }
 
 @font-face {
@@ -42,10 +41,38 @@ a {
   text-decoration: none;
 }
 
+input {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
 input[type=text] {
   height: 63px;
   border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 20px;
+}
+
+legend {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 337px) {
+
+  legend {
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 18px;
+  }
+
 }

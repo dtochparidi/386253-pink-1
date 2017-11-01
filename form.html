@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page__header--form">
     <h1 class="page-header__title  page-header__title">Конкурс</h1>
     <div class="page-header__nav">
       <div class="page-header__nav-container">
@@ -39,42 +39,46 @@
     <div class="form__wrapper">
       <h2 class="form__title">Фотогалерея Pink</h2><!--hidden-->
       <p class="form__wrapper-text">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span> Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="form__container" action="https://echo.htmlacademy.ru/" method="get" name="interview">
         <div class="form__personal">
           <div class="form__personal-container">
-            <label class="form__label">Фамилия:<input type="text" name="l-name" placeholder="Укажите фамилию *"></label>
-            <label class="form__label">Имя:<input type="text" name="f-name" placeholder="Введите ваше имя *"></label>
-            <label class="form__label">Отчество:<input type="text" name="th-name" placeholder="Ну и отчество тоже *"></label>
+            <label class="form__label"><span>Фамилия:</span><input type="text" name="l-name" placeholder="Укажите фамилию *"></label>
+            <label class="form__label  form__label--name"><span>Имя:</span><input type="text" name="f-name" placeholder="Введите ваше имя *"></label>
+            <label class="form__label"><span>Отчество:</span><input type="text" name="th-name" placeholder="Ну и отчество тоже *"></label>
           </div>
         </div>
-        <fieldset class="form__achievements">
+        <div class="form__achievements-wrapper">
+          <fieldset class="form__achievements">
             <legend class="form__legend form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
-          <div class="form__achievements-container">
-            <label class="form__label"><input type="checkbox" name="selfie" checked>Сделал селфи с акулой</label>
-            <label class="form__label"><input type="checkbox" name="beach" checked>Обгорел на пляже</label>
-            <label class="form__label"><input type="checkbox" name="chack">Видел Чака Норриса</label>
-            <label class="form__label"><input type="checkbox" name="souvenir">Накупил сувениров</label>
-            <label class="form__label"><input type="checkbox" name="tower" checked>Удержал башню</label>
-            <label class="form__label"><input type="checkbox" name="hotel">Разгромил отель</label>
-          </div>
-        </fieldset>
+            <div class="form__achievements-container">
+              <label class="form__label"><input type="checkbox" name="selfie" checked><span class="form__checkbox"></span>Сделал селфи с акулой</label>
+              <label class="form__label"><input type="checkbox" name="beach" checked><span class="form__checkbox"></span>Обгорел на пляже</label>
+              <label class="form__label"><input type="checkbox" name="chack"><span class="form__checkbox"></span>Видел Чака Норриса</label>
+              <label class="form__label"><input type="checkbox" name="souvenir"><span class="form__checkbox"></span>Накупил сувениров</label>
+              <label class="form__label"><input type="checkbox" name="tower" checked><span class="form__checkbox"></span>Удержал башню</label>
+              <label class="form__label"><input type="checkbox" name="hotel"><span class="form__checkbox"></span>Разгромил отель</label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__contacts">
           <legend class="form__legend">Контактная информация</legend>
           <div class="form__contacts-container">
-            <label class="form__label">Номер телефона<input type="text" name="phone" placeholder="Номер, пожалуйста"></label>
-            <label class="form__label">адрес почты<input type="text" name="email" placeholder="Введите почту *"></label>
+            <label class="form__label"><span class="form__label-text">Номер телефона</span><input type="text" name="phone" placeholder="Номер, пожалуйста"></label>
+            <label class="form__label"><span class="form__label-text">адрес почты</span><input type="text" name="email" placeholder="Введите почту *"></label>
           </div>
         </fieldset>
-        <fieldset class="form__app">
-          <legend class="form__legend--app">С каким приложением путешествовали?</legend>
-          <div class="form__app-container">
-            <label class="form__label"><input type="radio" name="ios" checked>Pink для iOS</label>
-            <label class="form__label"><input type="radio" name="android">Pink на Android</label>
-            <label class="form__label"><input type="radio" name="phone">Windows Phone</label>
-          </div>
-        </fieldset>
+        <div class="form__app-wrapper">
+          <fieldset class="form__app">
+            <legend class="form__legend form__legend--app">С каким приложением путешествовали?</legend>
+            <div class="form__app-container">
+              <label class="form__label"><input type="radio" name="app" checked><span class="form__radio"></span>Pink для iOS</label>
+              <label class="form__label"><input type="radio" name="app"><span class="form__radio"></span>Pink на Android</label>
+              <label class="form__label"><input type="radio" name="app"><span class="form__radio"></span>Windows Phone</label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__textarea">
           <legend class="form__legend form__legend--textarea">Опишите свои эмоции</legend>
           <div class="form__textarea-container">
@@ -86,19 +90,19 @@
         <div class="form__submit">
           <div class="form__submit-container">
             <button type="submit" name="submit">Отправить форму</button>
-            <span>* — обязательные поля</span>
+            <span class="form__submit-text"><span>*</span> — обязательные<span> для заполнения</span> поля</span>
           </div>
         </div>
       </form>
     </div>
   </section>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="page-footer__wrapper">
       <h2 class="page-footer__title">Текст</h2><!--hidden-->
       <div class="page-footer__logo-wrapper">
         <img class="page-footer__logo" src="http://placehold.it/100x300" alt="logo" width="50" height="50">
       </div>
-      <div class="social">
+      <div class="social social--form">
         <span class="social__item social__item--twitter" aria-label="twitter">twitter</span>
         <span class="social__item social__item--fb" aria-label="fb">fb</span>
         <span class="social__item social__item--play" aria-label="play">play</span>
